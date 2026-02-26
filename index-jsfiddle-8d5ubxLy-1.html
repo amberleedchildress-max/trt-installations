@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>try installations</title>
+
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #FFFFFF;
+  color: #254373;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  color: #1F57A5;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #254373;
+  font-weight: 500;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid #1F57A5;
+  color: #1F57A5;
+  padding: 5px 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.btn {
+  background: #1F57A5;
+  color: white !important;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+.hero {
+  position: relative;
+  height: 600px;
+  background-image: url('https://images.unsplash.com/photo-1505691723518-36a5ac3be353');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.submit-btn {
+  background: #1F57A5;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #1C4E97;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+  nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .hero {
+    height: 500px;
+  }
+}
+  </style>
+
+  
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRT Installations</title>
+
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">TRT Installations</div>
+
+  <div class="controls">
+    <button id="langToggle" class="lang-btn">ES</button>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </div>
+
+  <nav id="nav">
+    <a href="#home" data-en="Home" data-es="Inicio">Home</a>
+    <a href="#about" data-en="About" data-es="Nosotros">About</a>
+    <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+    <a href="#contact" class="btn" data-en="Contact Us" data-es="Contáctanos">Contact Us</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 
+      data-en="Furniture Installation and Architectural Finish Work for Hospitality and Branded Environments"
+      data-es="Instalación de Mobiliario y Acabados Arquitectónicos para Hospitalidad y Entornos de Marca">
+      Furniture Installation and Architectural Finish Work for Hospitality and Branded Environments
+    </h1>
+    <p 
+      data-en="Restaurants, hotels, corporate offices, schools, and national rollouts delivered with precision, speed, and consistent quality."
+      data-es="Restaurantes, hoteles, oficinas corporativas, escuelas y proyectos nacionales entregados con precisión, rapidez y calidad constante.">
+      Restaurants, hotels, corporate offices, schools, and national rollouts delivered with precision, speed, and consistent quality.
+    </p>
+    <a href="#contact" class="btn" data-en="Contact Us" data-es="Contáctanos">Contact Us</a>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section">
+  <h2 data-en="Industries Served" data-es="Industrias que Atendemos">Industries Served</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="">
+      <p data-en="Hospitality" data-es="Hospitalidad">Hospitality</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="">
+      <p data-en="Restaurants & QSR" data-es="Restaurantes">Restaurants & QSR</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="">
+      <p data-en="Corporate & Office" data-es="Corporativo">Corporate & Office</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="">
+      <p data-en="Education" data-es="Educación">Education</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2 data-en="About TRT Installations" data-es="Sobre TRT Installations">
+    About TRT Installations
+  </h2>
+  <p data-en="TRT Installations delivers furniture installation and architectural finish work nationwide."
+     data-es="TRT Installations ofrece instalación de mobiliario y acabados arquitectónicos a nivel nacional.">
+     TRT Installations delivers furniture installation and architectural finish work nationwide.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2 data-en="Contact Us" data-es="Contáctanos">Contact Us</h2>
+
+  <form action="https://formsubmit.co/youremail@example.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="text" name="Name" placeholder="Name / Nombre" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <textarea name="Message" placeholder="Project Details / Detalles del Proyecto"></textarea>
+
+    <button type="submit" class="submit-btn"
+      data-en="Submit"
+      data-es="Enviar">
+      Submit
+    </button>
+  </form>
+</section>
+
+<footer>
+  <p>TRT Installations — Oklahoma Based | Multi-State Capable</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+  <script>
+    // Language Toggle
+const toggleBtn = document.getElementById("langToggle");
+let currentLang = "en";
+
+toggleBtn.addEventListener("click", () => {
+  currentLang = currentLang === "en" ? "es" : "en";
+  toggleBtn.textContent = currentLang === "en" ? "ES" : "EN";
+
+  document.querySelectorAll("[data-en]").forEach(el => {
+    el.textContent = el.getAttribute(`data-${currentLang}`);
+  });
+});
+
+// Mobile Menu Toggle
+const menuToggle = document.getElementById("menuToggle");
+const nav = document.getElementById("nav");
+
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+  </script>
+</body>
+</html>
